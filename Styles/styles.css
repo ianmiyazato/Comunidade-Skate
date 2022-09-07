@@ -205,10 +205,22 @@ body {
     .principal {
         display: grid;
         grid-template-columns: auto 1fr auto;
+        grid-template-areas: 
+            "titulo-pagina titulo-pagina titulo-pagina"
+            "destaque-video destaque-video videos-recentes"
+            "seção-videos seção-videos seção-videos"
+            "produtos-recentes destaque-produto destaque-produto"
+            "seção-produtos seção-produtos seção-produtos"
+
+        ;
         column-gap: 32px;
         padding: 16px 60px;
         grid-column: 2;
     }
+}
+
+.cartão__imagem--desktop {
+    display: none;
 }
 
 .cartão {
@@ -217,6 +229,7 @@ body {
     overflow: hidden;
     background-color: var(--cor-cartão);
 }
+
 
 .cartão--destaque {
     margin-bottom: 16px;
@@ -261,6 +274,11 @@ body {
     margin-right: 8px;
 }
 
+.cartão__info--preço::before {
+    content: "\e905";
+    margin-right: 8px;
+}
+
 .cartão__botão {
     display: flex;
     justify-content: center;
@@ -276,7 +294,16 @@ body {
 .cartão__botão--play::before {
     content: "\e90b";
     font-size: 24px;
+}
 
+.cartão__botão--compras::before {
+    content: "\e901";
+    font-size: 24px;
+}
+
+.cartão__botão--picos::before {
+    content: "\e908";
+    font-size: 24px;
 }
 
 .cartão__botão--destaque {
@@ -292,7 +319,25 @@ body {
     display: none;
 }
 
+
 @media screen and (min-width: 1440px) {
+    .cartão--destaque {
+        margin-bottom: 0;
+    }
+    
+    .cartão__imagem--mobile {
+        display: none;
+    }
+    
+    .cartão__imagem--desktop {
+        display: block;
+    }
+
+    .cartão__botão {
+        grid-column: auto;
+        padding: 16px 8px;
+    }
+    
     .cartão--recentes {
         display: grid;
         grid-template-columns: auto auto;
@@ -301,6 +346,7 @@ body {
         width: 256px;
         padding: 16px;
         box-sizing: border-box;
+        align-self: flex-start;
     }
 
     .cartão--recentes .cartão__titulo {
@@ -346,4 +392,38 @@ body {
 .seção {
     display: grid;
     gap: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+    .seção {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .titulo-seção {
+        grid-column: span 4;
+    }
+
+    .destaque-video {
+        grid-area: destaque-video;
+    }
+    
+    .videos-recentes {
+        grid-area: videos-recentes;
+    }
+    
+    .seção-videos {
+        grid-area: seção-videos;
+    }
+    
+    .destaque-produto {
+        grid-area: destaque-produto;
+    }
+    
+    .produtos-recentes {
+        grid-area: produtos-recentes;
+    }
+    
+    .seção-produtos {
+        grid-area: seção-produtos;
+    }
 }

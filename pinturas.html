@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HZC | Pinturas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="Styles/reset.css">
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+    <header class="cabeçalho">
+        <button class="cabeçalho__menu" aria-label="Menu"><i></i></button>
+        <img src="Imagens/logo.svg" alt="Logotipo da HZC" class="cabeçalho__logo">
+        <p class="cabeçalho__perfil">Bruno Lopes</p>
+        <button class="cabeçalho__notificação" aria-label="Notificação"><i></i></button>
+    </header>
+
+    <nav class="menu__lateral">
+        <img src="Imagens/logo.svg" alt="Logotipo da HZC" class="menu__lateral-logo">
+        <a href="index.html" class="menu__lateral-link menu__lateral-link--inicio">Início</a>
+        <a href="videos.html" class="menu__lateral-link menu__lateral-link--videos">Vídeos</a>
+        <a href="picos.html" class="menu__lateral-link menu__lateral-link--picos">Picos</a>
+        <a href="#" class="menu__lateral-link menu__lateral-link--integrantes">Integrantes</a>
+        <a href="camisas.html" class="menu__lateral-link menu__lateral-link--camisas">Camisas</a>
+        <a href="pinturas.html" class="menu__lateral-link menu__lateral-link--pinturas">Pinturas</a>
+    </nav>
+
+    <main class="principal">
+        <article class="cartão cartão--recentes produtos-recentes">
+            <h3 class="cartão__titulo">Novas artes</h3>
+            <a href="#" class="cartão__link">Ver todos</a>
+            <ul class="cartão__lista">
+                <li class="cartão__item">
+                    <img src="Imagens/Rectangle 97.png" alt="Thumbnail" class="cartão__item-thumbnail">
+                    <h4 class="cartão__item-titulo">Sem título 01</h4>
+                    <p class="cartão__item-perfil">Antonio Tebyriçá</p>
+                </li>
+                <li class="cartão__item">
+                    <img src="Imagens/Rectangle 97-1.png" alt="Thumbnail" class="cartão__item-thumbnail">
+                    <h4 class="cartão__item-titulo">Sem título 02</h4>
+                    <p class="cartão__item-perfil">Antonio Tebyriçá</p>
+                </li>
+                <li class="cartão__item">
+                    <img src="Imagens/Rectangle 97-2.png" alt="Thumbnail" class="cartão__item-thumbnail">
+                    <h4 class="cartão__item-titulo">Segurança</h4>
+                    <p class="cartão__item-perfil">Raphael Gibson</p>
+                </li>
+                <li class="cartão__item">
+                    <img src="Imagens/Rectangle 97-3.png" alt="Thumbnail" class="cartão__item-thumbnail">
+                    <h4 class="cartão__item-titulo">Malunguisse</h4>
+                    <p class="cartão__item-perfil">Carolina Canavarro</p>
+                </li>
+                <li class="cartão__item">
+                    <img src="Imagens/Rectangle 97-4.png" alt="Thumbnail" class="cartão__item-thumbnail">
+                    <h4 class="cartão__item-titulo">Coroa da converse</h4>
+                    <p class="cartão__item-perfil">Nikolas de Murtas</p>
+                </li>
+                <li class="cartão__item">
+                    <img src="Imagens/Rectangle 97-2.png" alt="Thumbnail" class="cartão__item-thumbnail">
+                    <h4 class="cartão__item-titulo">Segurança</h4>
+                    <p class="cartão__item-perfil">Raphael Gibson</p>
+                </li>
+                <li class="cartão__item">
+                    <img src="Imagens/Rectangle 97.png" alt="Thumbnail" class="cartão__item-thumbnail">
+                    <h4 class="cartão__item-titulo">Sem título 03</h4>
+                    <p class="cartão__item-perfil">Antonio Tebyriçá</p>
+                </li>
+            </ul>
+        </article>
+
+        <article class="cartão cartão--destaque destaque-produto">
+            <img src="Imagens/banner-mobile_2.png" alt="Banner do cartão" class="cartão__imagem cartão__imagem--mobile">
+            <img src="Imagens/banner_2.png" alt="Banner do cartão" class="cartão__imagem cartão__imagem--desktop">
+            <div class="cartão__conteudo">
+                <p class="cartão__destaque">Nova arte</p>
+                <h3 class="cartão__titulo">Only Zikas - Lagoa Dompa Club</h3>
+                <p class="cartão__perfil">João ZMS</p>
+                <p class="cartão__info cartão__info--preço">33,33</p>
+                <p class="cartão__info cartão__info--visualização">53 visualizações</p>
+                <button class="cartão__botão cartão__botão--compras cartão__botão--destaque">Comprar agora</button>
+            </div>
+        </article>
+    </main>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
